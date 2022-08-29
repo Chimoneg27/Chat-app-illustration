@@ -314,11 +314,12 @@ form span{
     }
 
     form span{
-        margin-left: 1rem;
+        margin-left: 0rem;
+        font-weight: 600;
     }
 
     .one-hour{
-        margin-left: 1rem;
+        margin-left: 0rem;
     }
 
     input[type="radio"]{
