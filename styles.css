@@ -306,12 +306,14 @@ form span{
         margin-bottom: 0.5rem;
     }
 
-    form{
+      .form{
         padding: 0.5em;
+        font-size: 0.75rem;
+        width: 75%;
     }
 
     .one-hour{
-        margin-left: 5rem;
+        margin-left: 4rem;
     }
 
     input[type="radio"]{
