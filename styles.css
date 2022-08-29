@@ -309,6 +309,7 @@ form span{
 
     form{
         padding: 0.5em;
+        width: 75%
         font-size: 1rem;
     }
     form span{
