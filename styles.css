@@ -1,0 +1,341 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    /* Text */
+    --Pale-Violet : hsl(276, 100%, 81%);
+    --Moderate-Violet : hsl(276, 55%, 52%);
+    --Desaturated-Dark-Violet : hsl(271, 15%, 43%);
+    --Grayish-Blue : hsl(206, 6%, 79%);
+    --Very-Dark-Desaturated-Violet: hsl(271, 36%, 24%);
+    --Dark-Grayish-Violet: hsl(270, 7%, 64%);
+
+    /* Gradient, linear by the way */
+    --Light-Magenta: hsl(293, 100%, 63%);
+    --Light-Violet: hsl(264, 100%, 61%);
+
+    /* Secondary */
+    --White: hsl(0, 0%, 100%);
+    --Light-Grayish-Violet: hsl(270, 20%, 96%);
+    --Very-Dark-Desaturated-Violet: hsl(271, 36%, 24%);
+    --Very-Light-Magenta: hsl(289, 100%, 72%);
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 150vh;
+    font-family: "Rubik";
+    position: relative;
+}
+
+.chat-interface{
+    width: 50%;
+}
+
+.background-gradient{
+    position: absolute;
+    top: 0;
+    left: -1rem;
+    height: 90%;
+    width: 35%;
+    border-bottom-left-radius: 250px;
+    border-bottom-right-radius: 250px;
+    background-color: var(--Light-Violet);
+    z-index: -1;
+    background-image: linear-gradient(20deg, var(--Light-Violet),var(--Light-Magenta));
+}
+
+.booking{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    padding-right: 5em;
+}
+
+.booking h1{
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: var(--Very-Dark-Desaturated-Violet);
+    margin-left: 10rem;
+}
+
+.booking p{
+    color: var(--Desaturated-Dark-Violet);
+    line-height: 1.5rem;
+    margin-left: 10rem;
+}
+
+#chat-app{
+    position: absolute;
+    z-index: 1;
+    top: 7rem;
+    left: 25rem;
+    width: 25%;
+    height: 115vh;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 25px;
+    background-color: var(--Light-Grayish-Violet);
+    border: solid 0.75rem var(--White);
+}
+
+.chat-header{
+    width: 100%;
+    border-radius: 12px;
+    padding: 1.5em;
+    background-color: var(--Light-Violet);
+    background-image: linear-gradient(20deg, var(--Light-Violet),var(--Light-Magenta));
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: var(--White);
+}
+
+.top-notch{
+    position: absolute;
+    background-color: var(--White);
+    padding: 0.9rem;
+    top: -0.75rem;
+    left: 3rem;
+    width: 65%;
+    border-radius: 25px;
+}
+
+.samuel{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--White);
+}
+
+.samuel ul{
+    list-style: none;
+}
+
+.samuel li:last-child{
+    font-size: 70%;
+    color: var(--Pale-Violet);
+}
+
+.samuel img{
+    width: 10%;
+    border-radius: 100%;
+    border: 2px solid var(--White);
+}
+
+.conversation{
+    padding: 1em;
+    padding-bottom: 0;
+    background-color: var(--Light-Grayish-Violet);
+    position: relative;
+    border-radius: 20px;
+}
+
+.walker-chat{
+    font-size: 0.9rem;
+    padding: 0.5em;
+    color: var(--Moderate-Violet);
+    background-color: var(--Grayish-Blue);
+    margin-bottom: 1rem;
+    border-radius: 0.75rem;
+    width: 75%;
+}
+
+.client-chat-1{
+    font-size: 0.9rem;
+    padding: 0.5em;
+    color: var(--Desaturated-Dark-Violet);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin-bottom: 1rem;
+    width: 75%;
+    margin-left: auto;
+    border-radius: 15px;
+    border-bottom-right-radius: 0.25rem;
+}
+
+.client-chat-2{
+    font-size: 0.9rem;
+    padding: 0.5em;
+    color: var(--Desaturated-Dark-Violet);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin-bottom: 1.5rem;
+    width: 50%;
+    margin-left: auto;
+    border-radius: 15px;
+    border-bottom-right-radius: 0.25rem;
+}
+
+.client-chat-images{
+    width: 100%;
+}
+
+.client-chat-images img{
+    width: 57px;  
+    border-radius: 10px;
+}
+
+.client-chat-images ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 1rem;
+    justify-content: flex-end;
+}
+
+.client-chat-images li{
+    width: 57px;
+}
+
+form{
+    width: 90%;
+    padding: 0.75em;
+    color: var(--White);
+    background-color: var(--Light-Violet);
+    background-image: linear-gradient(20deg, var(--Light-Magenta),var(--Light-Violet));
+    border-radius: 12px;
+    border-bottom-left-radius: 5px;
+    margin-bottom: 0.5rem;
+}
+
+input[type="radio"]{
+    width: 1.15rem;
+    height: 1.15rem;
+}
+
+form span{
+    font-weight: 700;
+    margin-left: 3rem;
+}
+
+.one-hour{
+    margin-left: 5rem;
+}
+
+.message{
+    margin: 1rem auto 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 95%;
+    background-color: var(--White);
+    padding: 1em;
+    border-radius: 25px;
+    font-size: 0.75rem;
+    color: var(--Grayish-Blue);
+    align-items: center;
+}
+
+.message i{
+    color: var(--White);
+    background-color: var(--Very-Dark-Desaturated-Violet);
+    width: 1.5rem;
+    height: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    border-radius: 100%;
+    padding: 0.60em;
+}
+
+@media (max-width: 400px){
+    .container{
+        flex-direction: column;
+        height: 1000px;
+    }
+
+    .background-gradient{
+        height: 40%;
+        width: 90%;
+        left: -9rem;
+    }
+
+    .chat-interface{
+        width: 100%;
+        height: 60%;
+    }
+
+    #chat-app{
+        top: 3rem;
+        left: 2rem;
+        width: 85%;
+        height: 600px;
+    }
+
+    .conversation{
+        height: 485px;
+    }
+
+    .booking{
+        width: 100%;
+        height: 40%;
+        display: block;
+        padding: 6em 2em;
+        text-align: center;
+    }
+
+    .booking h1{
+        margin-left: 0;
+        margin-bottom: 1.5rem;
+    }
+    .booking p{
+        margin-left: 0;
+    }
+
+    .client-chat-1{
+        padding: 0.25em;
+        margin-bottom: 0.5rem;
+    }
+
+    .client-chat-2{
+        width: 65%;
+        margin-bottom: 0.5rem;
+    }
+
+    .walker-chat{
+        padding: 0.25em;
+        width: 92%;
+        margin-bottom: 0.5rem;
+    }
+
+    form{
+        padding: 0.5em;
+    }
+
+    .one-hour{
+        margin-left: 5rem;
+    }
+
+    input[type="radio"]{
+        width: 0.75rem;
+        height: 0.75rem;
+    }
+
+    .message{
+        margin: 1rem auto 0 auto;
+        padding: 0.5em;
+    }
+
+    .message i{
+        padding: 0.25em;
+        width: 1.25rem;
+        height: 1.25rem;
+        font-size: 1rem;
+    }
+}
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+    margin-top: 4rem; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
